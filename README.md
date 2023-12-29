@@ -13,6 +13,19 @@ TriggerEvent("tpz_notify:sendNotification", "Mailbox Notification", "This is a n
 
 ```
 
+### The following event is called from Client to Server to send a notification on the selected target player id.
+
+```lua
+
+-- @param title
+-- @param message
+-- @param icon (icon name directly from img/types)
+-- @param notificationType ("success", "error", "info")
+-- @param duration
+TriggerServerEvent("tpz_notify:sendNotificationTo", "Mailbox Notification", "This is a notification", "mail", "info", 15)
+
+```
+
 > Server Trigger
 
 ```lua
