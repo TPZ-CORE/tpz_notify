@@ -22,7 +22,7 @@ TriggerEvent("tpz_notify:sendNotification", "Mailbox Notification", "This is a n
 -- @param icon (icon name directly from img/types)
 -- @param notificationType ("success", "error", "info")
 -- @param duration
-TriggerServerEvent("tpz_notify:sendNotificationTo", "Mailbox Notification", "This is a notification", "mail", "info", 15)
+TriggerServerEvent("tpz_notify:sendNotificationTo", targetId, "Mailbox Notification", "This is a notification", "mail", "info", 15)
 
 ```
 
