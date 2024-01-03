@@ -1,23 +1,34 @@
 local HasNotificationActive = false
 local CooldownTime          = 0
 
+local QueueList             = {}
+local CurrentQueueIndex     = 1
+
 -----------------------------------------------------------
 --[[ Events ]]--
 -----------------------------------------------------------
 
+AddEventHandler('onResourceStop', function(resourceName)
+    if (GetCurrentResourceName() ~= resourceName) then
+      return
+    end
+		
+    QueueList = {}
+end)
+
 RegisterNetEvent("tpz_notify:sendNotification")
 AddEventHandler("tpz_notify:sendNotification", function(title, message, actionType, notifyType, duration)
 
-    if HasNotificationActive then
-        CooldownTime = 1
+    local newNotifyId      = #QueueList + 1
+    QueueList[newNotifyId] = true
+
+    while CurrentQueueIndex ~= (newNotifyId) do
+        Wait(1000)
     end
 
-    while HasNotificationActive do
-        Wait(250)
-    end
-
-    CooldownTime = duration
+    Wait(1000)
 		
+    CooldownTime = duration
     HasNotificationActive = true
 
     SetNUIState(HasNotificationActive, title, message, actionType, notifyType)
@@ -85,6 +96,8 @@ Citizen.CreateThread(function()
                 CooldownTime = 0
 
                 SendNUIMessage({action = 'close'})
+					
+		CurrentQueueIndex = CurrentQueueIndex + 1
             end
 
         end
