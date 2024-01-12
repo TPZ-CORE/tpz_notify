@@ -52,3 +52,7 @@ TriggerClientEvent("tpz_notify:sendNotification", source, "Mailbox Notification"
 TriggerEvent("tpz_notify:sendNotificationTo", targetId, "Mailbox Notification", "This is a notification", "mail", "info", 15)
 
 ```
+
+## Screenshot Displays
+
+![image](https://github.com/TPZ-CORE/tpz_notify/assets/152554963/296149a8-2f12-4ce4-a9fe-31b0c9824a09)
