@@ -6,6 +6,8 @@
 
 2. Add `ensure tpz_notify` before `tpz_core` in the resources.cfg or server.cfg, depends where your scripts are located.
 
+# Developers
+
 > Client Trigger
 
  ```lua
