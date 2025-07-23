@@ -28,8 +28,8 @@ body {
     background-repeat: no-repeat;
     background-size: 50%  35%;
 
-	margin-top: 3vw;
-	margin-left: 18vw;
+	margin-top: 15vw;
+	margin-left: -48vw;
 
 	overflow: hidden;
 	width: 50%;
@@ -49,8 +49,8 @@ body {
 
 #notify_action_image_display {
 	position: absolute;
-	width: 5vw;
-	height: 4vw;
+	width: 4vw;
+	height: 3vw;
 
 	margin-left: 1.5vw;
 	margin-top: 1.35vw;
@@ -67,11 +67,11 @@ body {
 
 	font-family: 'RDRLino', RDRLino, serif;
 
-	font-size: 1.3vw;
+	font-size: 1.1vw;
 	height: fit-content;
 	max-height: 14vw;
 
-	margin-left: 7vw;
+	margin-left: 6vw;
 	margin-top: 1.35vw;
 
 	text-align: left;
@@ -86,158 +86,13 @@ body {
 
 	font-family: 'Neue Aachen Pro', sans-serif;
 
-	font-size: 0.9vw;
+	font-size: 0.8vw;
 	height: fit-content;
 	max-height: 14vw;
 
-	margin-left: 7vw;
+	margin-left: 6vw;
 	margin-top: 2.9vw;
 
 	text-align: left;
 
-}
-
-/* Other */
-
-input[type=text] {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 0.8vw;
-	width: 90%;
-	color: rgba(255, 255, 255, 0.719);
-	height: 50px;
-	text-align: center;
-	background-color: rgb(27, 27, 27, 0.719);
-	border-color: rgb(58, 58, 58, 0.719);
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-select[type=field] {
-	font-family: "Prototype", serif;
-	font-size: 0.8vw;
-	width: 90%;
-	color: rgba(255, 255, 255, 0.719);
-	height: 50px;
-	text-align: center;
-	background-color: rgb(27, 27, 27, 0.719);
-	border-color: rgb(58, 58, 58, 0.719);
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-
-button {
-	font-family: "Prototype", serif;
-	display: block;
-	margin-top: 0px;
-	padding: 10px;
-	background-color: #5f1f1fb9;
-	border: 0;
-	color: rgba(255, 255, 255, 0.719);
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-
-	font-size: 0.8vw;
-}
-
-button:hover{
-
-	cursor: pointer;
-	background-color: rgb(87, 0, 0);
-	box-shadow: 0px 0px 15px rgb(87, 0, 0);
-}
-
-#count {
-    border: none;
-    outline: none;
-    font-size: 0.9vw;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
-
-.hoverControl {
-    background-color: rgba(31, 31, 31, 0.589);
-	user-select: none;
-}
-
-
-
-.radio {
-	font-family: "Prototype", serif;
-	text-align: center;
-	font-size: 0.8vw;
-	color: rgba(255, 255, 255, 0.719);
-}
-
-/* width */
-::-webkit-scrollbar {
-	width: 0.5vw;
-	border-radius: 0.1vw;
-	height: 0.55vw;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #222222ca;
-	border-radius: 0.5vw;
-	height: 0.55vw;
-}
-
-*.unselectable {
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
- 
-	/*
-	  Introduced in Internet Explorer 10.
-	  See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-	*/
-	-ms-user-select: none;
-	user-select: none;
-}
-
-*[data-tooltip] {
-    position: absolute;
-}
-
-*[data-tooltip]::after {
-    content: attr(data-tooltip);
-
-    position: absolute;
-
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
-	color: rgba(255, 255, 255, 0.883);
-
-	display: block;
-	text-align: left;
-    font-size: 0.7vw;
-
-    width: fit-content;
-	height: fit-content;
-
-    pointer-events: none;
-    opacity: 0;
-    -webkit-transition: opacity .15s ease-in-out;
-    -moz-transition: opacity .15s ease-in-out;
-    -ms-transition: opacity .15s ease-in-out;
-    -o-transition: opacity .15s ease-in-out;
-    transition: opacity .15s ease-in-out;
-
-    background: #000214f1;
-    padding: 2px 2px;
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
-}
-
-*[data-tooltip]:hover::after {
-    opacity: 1;
 }
