@@ -6,10 +6,7 @@ Config = {
     -- this type will return the color when being displayed.
     NotifyTypes = {
         ['error']   = "rgba(255, 0, 0, 0.79)",
-        ['success'] = "rgba(0, 255, 0, 0.79)",
-        ['info']    = "rgba(72, 112, 145, 1.0)"
+        ['success'] = "rgba(216, 216, 216, 0.79)",
+        ['info']    = "rgba(216, 216, 216, 0.79)"
     },
-
-
-
 }
