@@ -62,5 +62,5 @@ TriggerEvent("tpz_notify:sendNotificationTo", targetId, "Mailbox Notification", 
 ```
 
 ## Screenshot Displays
+<img width="801" height="216" alt="εικόνα" src="https://github.com/user-attachments/assets/560e0c90-a3db-43a5-838a-95436788cfa6" />
 
-![image](https://github.com/TPZ-CORE/tpz_notify/assets/152554963/296149a8-2f12-4ce4-a9fe-31b0c9824a09)
