@@ -17,7 +17,7 @@ AddEventHandler('onResourceStop', function(resourceName)
 end)
 
 RegisterNetEvent("tpz_notify:sendNotification")
-AddEventHandler("tpz_notify:sendNotification", function(title, message, actionType, notifyType, duration)
+AddEventHandler("tpz_notify:sendNotification", function(title, message, actionType, notifyType, duration, align)
 
     local newNotifyId      = #QueueList + 1
     QueueList[newNotifyId] = true
@@ -31,7 +31,7 @@ AddEventHandler("tpz_notify:sendNotification", function(title, message, actionTy
     CooldownTime = duration
     HasNotificationActive = true
 
-    SetNUIState(HasNotificationActive, title, message, actionType, notifyType)
+    SetNUIState(HasNotificationActive, title, message, actionType, notifyType, align)
 end)
 
 -----------------------------------------------------------
@@ -42,12 +42,16 @@ OpenNUI = function ()
     SetNUIState(true)
 end
 
-SetNUIState = function(state, title, message, actionType, notifyType)
+SetNUIState = function(state, title, message, actionType, notifyType, align)
 
     HasNotificationActive = state
 
     if Config.NotifyTypes[notifyType] then
         notifyType = Config.NotifyTypes[notifyType]
+    end
+
+    if not align then
+        align = 'left'
     end
 
 	SendNUIMessage({
@@ -57,6 +61,7 @@ SetNUIState = function(state, title, message, actionType, notifyType)
         message = message,
         actionType = actionType,
         color = notifyType,
+        align = align,
 	})
 
 end
