@@ -49,7 +49,8 @@ $(function() {
 				}
 
 				$(".notify").fadeIn(500);
-		
+	
+			});
 
 		}
 
